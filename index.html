@@ -140,5 +140,33 @@
  }   
 
  </style>   
-	
+	<head>
+</head>
+	<hr style="width:100PX;height:2px;">
+<h4>    <font size="1" color="#FF8040" >
+<div id="timeshow">
+</div>
+<script type="text/javascript">
+var time=new Date();
+time.setHours(0);
+time.setMinutes(0);
+time.setSeconds(3);
+var timeout;
+var timeshow=document.getElementById("timeshow");
+function countdown(){
+var hour=time.getHours();
+var min=time.getMinutes();
+var second=time.getSeconds();
+if(hour=="0"&&min=="0"&&second=="0"){alert("学业繁重，尚未开工😊");clearInterval(timeout);}
+time.setSeconds(second-1);
+hour<10?hour="0"+hour:hour;
+min<10?min="0"+min:min;
+second<10?second="0"+second:second;
+timeshow.innerHTML=hour+":"+min+":"+second;
+}
+timeout= setInterval(countdown,1000);
+</script>
+
+</font>   </h4>
  
+	</html>
