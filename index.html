@@ -1,4 +1,89 @@
 <html>
+<!doctype html>  
+<html>  
+    <head>          
+        <meta charset='utf-8'>  
+        <meta name='keywords' content=','>  
+        <meta name='description' content=''>  
+        <title>小琳儿</title>  
+           
+        <style>  
+            *{  
+                margin:0;  
+            }  
+            html{  
+                height:100%;  
+            }  
+            body{  
+                display:flex; /*弹性盒模型和margin:auto居中*/ 
+                height:100%;  
+                background:#369;  
+                animation:change 6s linear infinite;  
+            }  
+            #content{  
+                margin:auto; /*可以和弹性盒模型一起居中*/ 
+                width:300px;  
+                height:300px;  
+            }  
+            #content .love{  
+                position:relative;  
+                width:200px;  
+                height:180px;  
+            }  
+            .love::before,  
+            .love::after{  
+                display:block; /*展示为块级元素*/ 
+                content:'';  
+                width:100px;  
+                height:150px;  
+                background-color:black;                  
+                border-radius:100px 100px 0 0;  
+            }  
+            .love::before{  
+                /*css 形变 旋转*/ 
+                transform:rotate(-50deg) translateY(27px) translateX(11px);  
+            }  
+            .love::after{      
+                /*css 形变 旋转*/ 
+                transform:rotate(50deg) translateY(-149px) translateX(-59px);          
+            }              
+            .love:nth-of-type(2){              
+                top:-178px;  
+                left:92px;              
+            }  
+            .love:nth-of-type(2):before,.love:nth-of-type(2):after{  
+                background-color:red;  
+            }  
+            /*选中其中一个*/ 
+            .love:nth-of-type(1){  
+                z-index:999;  
+                left:300px;              
+                /*                匀速 无限运动*/ 
+                animation:move 6s linear infinite;  
+            }  
+            @keyframes move{  
+                0%{left:300px}  
+                50%{left:50px}  
+                100%{left:-100px}  
+            }              
+            @keyframes change{  
+                0%{background-color:#368;}  
+                50%{background-color:#000;}  
+                100%{background-color:#368;}  
+            }  
+               
+        </style>  
+           
+    </head>  
+<body>   
+    <p id='content'>  
+        <p class='love'></p>  
+        <p class='love'></p>  
+    </p>  
+       
+</body>  
+</html>  
+   
 
 <body>
 	<title>小琳儿</title>
