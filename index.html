@@ -1,4 +1,40 @@
 <html>
+<style>
+        body{
+            background: #000;
+        }
+        #snow{
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0; 
+            background: url('snow1.png'),  url('snow2.png');
+            -webkit-animation: snow 15s linear infinite;
+            animation: snow 15s linear infinite;
+        }
+        @keyframes snow{
+        0% {
+            background-position: 0 0, 0 0;
+        }
+        100% {
+            background-position: 500px 1000px, 500px 500px;
+            }
+        }
+        @-webkit-keyframes snow{
+            0% {
+                background-position: 0 0, 0 0;
+            }
+            100% {
+                background-position: 500px 1000px, 500px 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="snow"></div>
+</body>
+
 <body>
 	<title>小琳儿</title>
 	<hr style="width:1PX;height:1px;">
