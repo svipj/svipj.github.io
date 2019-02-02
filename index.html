@@ -11,6 +11,44 @@
 
 
 <body>
+	<style type="text/css"> 
+<head>
+#audio_btn {
+      width: 30px;
+      height: 30px;
+      background-image: url(normalmusic.svg);
+      background-size: contain;
+  }
+  
+  .rotate {
+      -webkit-animation: rotating 1.2s linear infinite;
+     -moz-animation: rotating 1.2s linear infinite;
+     -o-animation: rotating 1.2s linear infinite;
+     animation: rotating 1.2s linear infinite
+ }
+ 
+ @-webkit-keyframes rotating {
+     from { -webkit-transform: rotate(0) }
+     to { -webkit-transform: rotate(360deg) }
+ }
+ 
+ @keyframes rotating {
+     from { transform: rotate(0) }
+     to { transform: rotate(360deg) }
+ }
+ @-moz-keyframes rotating {
+     from { -moz-transform: rotate(0) }
+     to { -moz-transform: rotate(360deg) }
+ }
+</head>
+</style>
+<html>
+<style>
+<div id="audio_btn" class="rotate">
+     <audio loop src="bg_audio.mp3" id="media" autoplay="" preload="">杀杀杀</audio>
+ </div>
+</style>
+</html>
 	<title>小琳儿</title>
 	<hr style="width:1PX;height:1px;">
 
