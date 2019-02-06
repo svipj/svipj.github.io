@@ -1,8 +1,10 @@
 <html>
 <body>
-<h1>测试页面<h1>
-<embed src="/blob/master/MUSIC/China-X.mp3" hidden="false" autostart="true" loop="true">
+<h1>tas<h1>
+<embed src="svipj.github.io/MUSIC/China-X.mp3" hidden="false" autostart="true" loop="true">
 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=41500546&auto=1&height=66"></iframe>
 </html>
+
+
