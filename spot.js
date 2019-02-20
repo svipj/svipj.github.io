@@ -18,7 +18,7 @@
         .then(() => engine.shake())
         .then(() => engine.toText('CUTE'))
         .then(() => engine.shake())
-        .then(() => engine.toText('YOU!!! '))
+        .then(() => engine.toText('YOU'))
         .then(() => engine.shake())
         .then(() => engine.toText('一定要'))
         .then(() => engine.shake())
