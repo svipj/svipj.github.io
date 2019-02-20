@@ -10,11 +10,11 @@
     
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('❤ '))
+        promise.then(() => engine.toText('❤'))
         .then(() => engine.shake())
          .then(() => engine.toText('19岁 '))
         .then(() => engine.shake())
-        .then(() => engine.toText('属于 '))
+        .then(() => engine.toText('属于'))
         .then(() => engine.shake())
         .then(() => engine.toText('CUTE'))
         .then(() => engine.shake())
@@ -22,7 +22,9 @@
         .then(() => engine.shake())
         .then(() => engine.toText('一定要'))
         .then(() => engine.shake())
-        .then(() => engine.toText('HAPPY😊'))
+        .then(() => engine.toText('HAPPY'))
+        .then(() => engine.shake())
+        .then(() => engine.toText('😊'))
         .then(() => engine.shake())
         .then(() => engine.toText('2019'))
         .then(() => engine.shake())
