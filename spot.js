@@ -10,7 +10,7 @@
     
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('❤'))
+        promise.then(() => engine.toText('>-<'))
         .then(() => engine.shake())
          .then(() => engine.toText('19岁 '))
         .then(() => engine.shake())
